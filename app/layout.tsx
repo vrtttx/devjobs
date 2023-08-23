@@ -1,4 +1,4 @@
-import './globals.css';
+import getCurrentUser from './actions/getCurrentUser';
 
 import type { Metadata } from 'next';
 
@@ -8,6 +8,8 @@ import ClientOnly from '@/app/components/ClientOnly';
 import LoginModal from '@/app/components/modals/LoginModal';
 import RegisterModal from '@/app/components/modals/RegisterModal';
 import Navbar from '@/app/components/navbar/Navbar';
+
+import './globals.css';
 
 import { Nunito } from 'next/font/google';
 
@@ -19,11 +21,13 @@ export const metadata: Metadata = {
 		'A developer job platform where users can filter and apply for opportunities based on their preferred language and technology.',
 };
 
-export default function RootLayout({
+export default async function RootLayout({
 	children,
 }: {
 	children: React.ReactNode;
 }) {
+	const currentUser = await getCurrentUser();
+
 	return (
 		<html lang="en">
 			<body className={nunito.className}>
@@ -31,7 +35,7 @@ export default function RootLayout({
 					<ToastProvider />
 					<LoginModal />
 					<RegisterModal />
-					<Navbar />
+					<Navbar currentUser={currentUser} />
 				</ClientOnly>
 				{children}
 			</body>

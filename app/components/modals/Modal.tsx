@@ -72,8 +72,8 @@ const Modal: FC<ModalProps> = ({
 								: 'translate-y-full opacity-0'
 						}`}
 					>
-						<div className="w-full h-full flex flex-col relative border-0 rounded-3xl outline-none bg-white shadow-xl translate focus:outline-none md:h-auto lg:h-auto">
-							<div className="flex items-center justify-center relative p-6 border-b-[1px] rounded-t-3xl bg-emerald-500">
+						<div className="w-full h-full flex flex-col relative border-0 outline-none bg-white shadow-xl translate focus:outline-none sm:rounded-3xl md:h-auto lg:h-auto">
+							<div className="flex items-center justify-center relative p-6 border-b-[1px] bg-emerald-500 sm:rounded-t-3xl">
 								<div className="font-semibold text-lg text-white">{title}</div>
 								<button
 									className="absolute right-9 p-1 b-0 text-white transition hover:opacity-70"

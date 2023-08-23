@@ -72,11 +72,11 @@ const Modal: FC<ModalProps> = ({
 								: 'translate-y-full opacity-0'
 						}`}
 					>
-						<div className="w-full h-full flex flex-col relative border-0 rounded-lg outline-none bg-white shadow-lg translate focus:outline-none md:h-auto lg:h-auto">
-							<div className="flex items-center justify-center relative p-6 border-b-[1px] rounded-t">
-								<div className="font-semibold text-lg">{title}</div>
+						<div className="w-full h-full flex flex-col relative border-0 outline-none bg-white shadow-xl translate focus:outline-none sm:rounded-3xl md:h-auto lg:h-auto">
+							<div className="flex items-center justify-center relative p-6 border-b-[1px] bg-emerald-500 sm:rounded-t-3xl">
+								<div className="font-semibold text-lg text-white">{title}</div>
 								<button
-									className="absolute right-9 p-1 b-0 transition hover:opacity-70"
+									className="absolute right-9 p-1 b-0 text-white transition hover:opacity-70"
 									onClick={handleClose}
 								>
 									<IoMdClose size={18} />

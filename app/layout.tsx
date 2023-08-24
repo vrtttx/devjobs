@@ -8,6 +8,7 @@ import ClientOnly from '@/app/components/ClientOnly';
 import LoginModal from '@/app/components/modals/LoginModal';
 import PostJobModal from '@/app/components/modals/PostJobModal';
 import RegisterModal from '@/app/components/modals/RegisterModal';
+import SearchModal from '@/app/components/modals/SearchModal';
 import Navbar from '@/app/components/navbar/Navbar';
 
 import './globals.css';
@@ -37,6 +38,7 @@ export default async function RootLayout({
 					<LoginModal />
 					<RegisterModal />
 					<PostJobModal />
+					<SearchModal />
 					<Navbar currentUser={currentUser} />
 				</ClientOnly>
 				{children}

@@ -6,6 +6,7 @@ import ToastProvider from '@/app/providers/ToastProvider';
 
 import ClientOnly from '@/app/components/ClientOnly';
 import LoginModal from '@/app/components/modals/LoginModal';
+import PostJobModal from '@/app/components/modals/PostJobModal';
 import RegisterModal from '@/app/components/modals/RegisterModal';
 import Navbar from '@/app/components/navbar/Navbar';
 
@@ -35,6 +36,7 @@ export default async function RootLayout({
 					<ToastProvider />
 					<LoginModal />
 					<RegisterModal />
+					<PostJobModal />
 					<Navbar currentUser={currentUser} />
 				</ClientOnly>
 				{children}

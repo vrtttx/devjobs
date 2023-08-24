@@ -32,7 +32,7 @@ const Input: FC<InputProps> = ({
 			{formatSalary && (
 				<BiDollar
 					size={22}
-					classname="absolute top-9 left-3 text-neutral-700"
+					className="absolute top-9 left-2 text-neutral-700"
 				/>
 			)}
 			<input
@@ -40,7 +40,7 @@ const Input: FC<InputProps> = ({
 				type={type}
 				placeholder=" "
 				className={`peer w-full p-2.5 pt-6 pl-7 font-light border-2 rounded-lg outline-none bg-white transition disabled:opacity-70 disabled:cursor-not-allowed ${
-					formatSalary ? 'pl-11 mt-4' : 'pl-4'
+					formatSalary ? 'pl-8 mt-4' : 'pl-[0.95rem]'
 				} ${
 					errors[id]
 						? 'border-rose-500 focus:border-rose-500'
@@ -50,8 +50,8 @@ const Input: FC<InputProps> = ({
 				disabled={disabled}
 			/>
 			<label
-				className={`absolute top-5 left-7 text-sm transform origin-[0] -translate-y-3 duration-150 z-10 ${
-					formatSalary ? 'top-9 left-11' : 'left-4'
+				className={`absolute top-5 text-sm transform origin-[0] -translate-y-3 duration-150 z-10 ${
+					formatSalary ? 'top-9 left-9' : 'left-4'
 				} peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 ${
 					errors[id] ? 'text-rose-500' : 'text-zinc-400'
 				}`}

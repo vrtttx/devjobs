@@ -47,7 +47,7 @@ const ExperienceLevel: FC<ExperienceLevelProps> = ({
 				)}
 				className="w-full"
 				classNames={{
-					control: () => 'p-3 border-2',
+					control: () => 'p-2 border-2',
 					input: () => 'text-lg',
 					option: () => 'text-lg',
 				}}

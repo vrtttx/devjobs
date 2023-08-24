@@ -42,7 +42,7 @@ const JobType: FC<JobTypeProps> = ({ title, subtitle, value, onChange }) => {
 				)}
 				className="w-full"
 				classNames={{
-					control: () => 'p-3 border-2',
+					control: () => 'p-2 border-2',
 					input: () => 'text-lg',
 					option: () => 'text-lg',
 				}}

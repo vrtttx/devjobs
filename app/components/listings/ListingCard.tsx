@@ -46,46 +46,49 @@ const ListingCard: FC<ListingCardProps> = ({
 	);
 
 	return (
-		<div
-			className="group col-span-1 cursor-pointer"
-			onClick={() => router.push(`/listings/${data.id}`)}
-		>
-			<div className="w-full flex flex-col gap-2 p-4 border-[1px] border-neutral-200 rounded-lg shadow-sm group-hover:shadow-lg">
-				<div className="flex flex-row items-center gap-5">
-					<div className="aspect-square w-[100px] relative rounded-xl overflow-hidden">
+		<div className="group col-span-1">
+			<div className="w-full flex flex-col gap-2 p-4 border-[1px] border-neutral-300 rounded-lg bg-white shadow-sm group-hover:shadow-lg">
+				<div className="flex flex-row items-center gap-4">
+					<div className="aspect-square w-[80px] relative rounded-xl overflow-hidden">
 						<Image
 							src={data.imageSrc}
-							alt="Listing Logo"
-							className="w-full h-full object-cover transition group-hover:scale-110"
+							alt="Company Logo"
+							className="w-full h-full object-cover transition group-hover:scale-105"
 							fill
 						/>
 					</div>
-					<div className="flex flex-col gap-1">
-						<div className="font-light text-sm text-neutral-600">
+					<div className="flex flex-col space-y-1">
+						<div className="font-light text-base text-neutral-600">
 							{data.company}
 						</div>
-						<div className="font-bold text-lg">{data.title}</div>
-						<div className="font-light text-xs text-neutral-500">
-							{location?.label}, {location?.region}
+						<div className="font-bold text-base text-gray-950">
+							{data.title}
 						</div>
-						<div className="font-semibold text-md text-neutral-800/80">
-							$ {data.salary}{' '}
-							<span className="font-light text-neutral-500">/ Year</span>
+						<div className="font-light text-sm text-neutral-400">
+							{location?.label}
 						</div>
 					</div>
 				</div>
-				<div className="flex items-center justify-between mt-4 mb-4 text-[11px] font-light text-neutral-100">
+				<div className="flex items-center justify-between mt-2 font-light text-[12px] text-white">
 					<div className="flex items-center justify-start gap-2">
-						<div className="rounded-md bg-blue-950 py-2 px-3">
+						<div className="px-3 py-2 rounded-md bg-gray-950">
 							{data.category}
 						</div>
-						<div className="rounded-md bg-blue-950 py-2 px-3">
+						<div className="px-3 py-2 rounded-md bg-gray-950">
 							{data.xpLevelValue}
 						</div>
-						<div className="rounded-md bg-blue-950 py-2 px-3">
+						<div className="px-3 py-2 rounded-md bg-gray-950">
 							{data.jobTypeValue}
 						</div>
 					</div>
+				</div>
+				<div className="flex items-center justify-between gap-3 mt-2">
+					<button
+						className="w-full py-2 font-light text-sm text-white rounded-md bg-blue-600 transition hover:opacity-80"
+						onClick={() => router.push(`/listings/${data.id}`)}
+					>
+						Check out!
+					</button>
 					<div className="">
 						<HeartButton listingId={data.id} currentUser={currentUser} />
 					</div>

@@ -1,8 +1,8 @@
-import getCurrentUser from './actions/getCurrentUser';
-
-import type { Metadata } from 'next';
+import getCurrentUser from '@/app/actions/getCurrentUser';
 
 import ToastProvider from '@/app/providers/ToastProvider';
+
+import type { Metadata } from 'next';
 
 import ClientOnly from '@/app/components/ClientOnly';
 import LoginModal from '@/app/components/modals/LoginModal';
@@ -32,7 +32,7 @@ export default async function RootLayout({
 
 	return (
 		<html lang="en">
-			<body className={nunito.className}>
+			<body className={`bg-gray-100 ${nunito.className}`}>
 				<ClientOnly>
 					<ToastProvider />
 					<LoginModal />

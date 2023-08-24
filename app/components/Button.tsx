@@ -30,7 +30,7 @@ const Button: FC<ButtonProps> = ({
 			} ${
 				outline
 					? 'text-black border-black bg-white'
-					: 'text-white border-emerald-600 bg-emerald-600'
+					: 'text-white border-blue-600 bg-blue-600'
 			}`}
 			onClick={onClick}
 			disabled={disabled}

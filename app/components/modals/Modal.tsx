@@ -63,8 +63,8 @@ const Modal: FC<ModalProps> = ({
 
 	return (
 		<>
-			<div className="flex items-center justify-center fixed inset-0 outline-none bg-neutral-800/70 overflow-x-hidden overflow-y-auto z-50 focus:outline-none">
-				<div className="w-full h-full max-w-[500px] relative mx-auto my-6 md:w-4/6 md:h-auto lg:w-3/6 lg:h-auto xl:w-2/5">
+			<div className="flex items-center justify-center fixed inset-0 bg-neutral-800/80 outline-none overflow-x-hidden overflow-y-auto z-50 focus:outline-none">
+				<div className="w-full h-full max-w-[500px] relative mx-auto my-6 md:w-4/6 md:h-auto lg:w-3/6 lg:h-auto xl:w-[2/5]">
 					<div
 						className={`h-full translate duration-300 ${
 							showModal
@@ -72,14 +72,16 @@ const Modal: FC<ModalProps> = ({
 								: 'translate-y-full opacity-0'
 						}`}
 					>
-						<div className="w-full h-full flex flex-col relative border-0 outline-none bg-white shadow-xl translate focus:outline-none sm:rounded-3xl md:h-auto lg:h-auto">
-							<div className="flex items-center justify-center relative p-6 border-b-[1px] bg-emerald-500 sm:rounded-t-3xl">
-								<div className="font-semibold text-lg text-white">{title}</div>
+						<div className="w-full h-full flex flex-col relative border-0 bg-white outline-none shadow-xl translate focus:outline-none sm:rounded-3xl md:h-auto lg:h-auto">
+							<div className="flex items-center justify-center relative p-6 border-b-[1px] bg-blue-600 sm:rounded-t-3xl">
+								<div className="font-semibold text-xl text-gray-50">
+									{title}
+								</div>
 								<button
-									className="absolute right-9 p-1 b-0 text-white transition hover:opacity-70"
+									className="absolute right-9 p-1 b-0 text-gray-300 transition hover:opacity-70"
 									onClick={handleClose}
 								>
-									<IoMdClose size={18} />
+									<IoMdClose size={20} />
 								</button>
 							</div>
 							<div className="flex-auto relative p-6">{body}</div>

@@ -42,9 +42,9 @@ const CategoryBox: FC<CategoryBoxProps> = ({ icon: Icon, label, selected }) => {
 
 	return (
 		<div
-			className={`flex flex-col items-center justify-center gap-2 p-3 border-b-2 cursor-pointer transition hover:text-neutral-800 ${
-				selected ? 'border-b-emerald-800' : 'border-transparent'
-			} ${selected ? 'text-emerald-500' : 'text-neutral-500'}`}
+			className={`flex flex-col items-center justify-center gap-2 p-3 border-b-2 cursor-pointer transition hover:text-neutral-600 ${
+				selected ? 'border-b-blue-800' : 'border-transparent'
+			} ${selected ? 'text-blue-500' : 'text-neutral-500'}`}
 			onClick={handleClick}
 		>
 			<Icon size={26} />

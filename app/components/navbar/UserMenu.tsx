@@ -41,23 +41,23 @@ const UserMenu: FC<UserMenuProps> = ({ currentUser }) => {
 		<div className="relative">
 			<div className="flex flex-row items-center gap-3">
 				<div
-					className="hidden px-4 py-3 font-semibold text-sm text-emerald-800 rounded-full cursor-pointer transition hover:bg-neutral-100 md:block"
+					className="hidden px-4 py-3 font-semibold text-sm text-blue-950 rounded-full cursor-pointer transition hover:bg-neutral-100 md:block"
 					onClick={onJobs}
 				>
 					Post a Job
 				</div>
 				<div
-					className="flex flex-row items-center gap-3 p-4 text-emerald-800 border-[1px] rounded-full border-neutral-200 cursor-pointer transition hover:shadow-md md:px-2 md:py-1"
+					className="flex flex-row items-center gap-3 p-4 text-blue-950 border-[1px] rounded-full border-neutral-200 cursor-pointer transition hover:shadow-md md:px-2 md:py-1"
 					onClick={toggleOpen}
 				>
-					<AiOutlineMenu />
+					<AiOutlineMenu size={20} className="sm:ml-1" />
 					<div className="hidden md:block">
 						<Avatar src={currentUser?.image} />
 					</div>
 				</div>
 			</div>
 			{isOpen && (
-				<div className="w-[48vw] absolute top-14 right-0 text-sm text-emerald-800 border-[1px] rounded-xl border-neutral-200 bg-white shadow-md overflow-hidden md:w-3/4 md:top-12">
+				<div className="w-[48vw] absolute top-16 right-0 text-sm text-blue-600 border-[1px] rounded-xl border-neutral-200 bg-white shadow-md overflow-hidden md:w-3/4 md:top-12">
 					<div className="flex flex-col cursor-pointer">
 						{currentUser ? (
 							<>

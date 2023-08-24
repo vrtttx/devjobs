@@ -22,15 +22,15 @@ const Search = () => {
 
 	return (
 		<div
-			className="w-full px-4 py-2 border-[1px] rounded-full shadow-sm cursor-pointer transition hover:shadow-md md:w-auto"
+			className="w-full px-2 py-2 border-[1px] rounded-full shadow-sm cursor-pointer transition hover:shadow-md md:w-auto"
 			onClick={searchModal.onOpen}
 		>
 			<div className="w-full flex flex-row items-center justify-between md:w-[250px]">
-				<div className="px-2 font-semibold text-sm text-emerald-800">
+				<div className="px-4 font-semibold text-sm text-gray-950">
 					{locationLabel}
 				</div>
-				<div className="p-2 text-white rounded-full bg-emerald-500">
-					<BiSearch size={14} />
+				<div className="p-2 text-white rounded-full bg-blue-600">
+					<BiSearch size={16} />
 				</div>
 			</div>
 		</div>

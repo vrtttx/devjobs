@@ -139,7 +139,7 @@ const PostJobModal = () => {
 		<div className="flex flex-col gap-8">
 			<Heading
 				title="Pick a Category!"
-				subtitle="Which of these best describes the main technology you are looking for?"
+				subtitle="Which one is the main technology you are seeking?"
 				center
 			/>
 			<div className="max-h-[50vh] grid grid-cols-2 gap-3 overflow-y-auto md:grid-cols-3">
@@ -160,7 +160,11 @@ const PostJobModal = () => {
 	if (step === STEPS.LOCATION) {
 		bodyContent = (
 			<div className="flex flex-col gap-8">
-				<Heading title="Location" subtitle="Where is the job located?" center />
+				<Heading
+					title="Location"
+					subtitle="Where is this opening located?"
+					center
+				/>
 				<CountrySelect
 					value={location}
 					onChange={(value) => setCustomValue('location', value)}
@@ -180,23 +184,29 @@ const PostJobModal = () => {
 				/>
 				<JobType
 					title="Job Type"
-					subtitle="What type of job is this?"
+					subtitle=""
 					value={jobTypeValue}
 					onChange={(value) => setCustomValue('jobTypeValue', value)}
 				/>
 				<hr />
 				<ExperienceLevel
 					title="Experience Level"
-					subtitle="What experience level would suit this position?"
+					subtitle=""
 					value={xpLevelValue}
 					onChange={(value) => setCustomValue('xpLevelValue', value)}
 				/>
-				<hr />
 				<Counter
-					title="Experience"
-					subtitle="How many years of experience a candidate should have for this job?"
+					title="Years of Experience"
+					subtitle=""
 					value={xpCount}
 					onChange={(value) => setCustomValue('xpCount', value)}
+				/>
+				<hr />
+				<VisaSelect
+					title="Visa Sponsorship"
+					subtitle=""
+					value={visaValue}
+					onChange={(value) => setCustomValue('visaValue', value)}
 				/>
 			</div>
 		);
@@ -219,16 +229,9 @@ const PostJobModal = () => {
 					required
 				/>
 				<hr />
-				<VisaSelect
-					title="Visa Sponsorship"
-					subtitle="Does your company offer visa sponsorship?"
-					value={visaValue}
-					onChange={(value) => setCustomValue('visaValue', value)}
-				/>
-				<hr />
 				<CounterFive
 					title="Company Size"
-					subtitle="How many employees does your company have?"
+					subtitle="How many employees do you have?"
 					value={employeeCount}
 					onChange={(value) => setCustomValue('employeeCount', value)}
 				/>

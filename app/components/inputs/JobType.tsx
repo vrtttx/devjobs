@@ -49,7 +49,7 @@ const JobType: FC<JobTypeProps> = ({ title, subtitle, value, onChange }) => {
 				theme={(theme) => ({
 					...theme,
 					borderRadius: 6,
-					colors: { ...theme.colors, primary25: '#e4eeff' },
+					colors: { ...theme.colors, primary25: '#f9f9f9' },
 				})}
 				isClearable
 			/>

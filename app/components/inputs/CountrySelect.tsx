@@ -38,14 +38,14 @@ const CountrySelect: FC<CountrySelectProps> = ({ value, onChange }) => {
 				</div>
 			)}
 			classNames={{
-				control: () => 'p-3 border-2',
+				control: () => 'p-2 border-2',
 				input: () => 'text-lg',
 				option: () => 'text-lg',
 			}}
 			theme={(theme) => ({
 				...theme,
 				borderRadius: 6,
-				colors: { ...theme.colors, primary25: '#e4eeff' },
+				colors: { ...theme.colors, primary25: '#f9f9f9' },
 			})}
 			isClearable
 		/>

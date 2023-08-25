@@ -1,8 +1,8 @@
 # DevJobs
 
-[![GitHub issues](https://img.shields.io/github/issues/your-username/devjobs)](https://github.com/vrtttx/devjobs/issues)
-[![GitHub stars](https://img.shields.io/github/stars/your-username/devjobs)](https://github.com/vrtttx/devjobs/stargazers)
-[![GitHub license](https://img.shields.io/github/license/your-username/devjobs)](https://github.com/vrtttx/devjobs/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/vrtttx/devjobs)](https://github.com/vrtttx/devjobs/issues)
+[![GitHub stars](https://img.shields.io/github/stars/vrtttx/devjobs)](https://github.com/vrtttx/devjobs/stargazers)
+[![GitHub license](https://img.shields.io/github/license/vrtttx/devjobs)](https://github.com/vrtttx/devjobs/blob/main/LICENSE)
 
 ## Simplifying Your Developer Job Search!
 
@@ -10,7 +10,7 @@ DevJobs is a developer job platform that revolutionizes the way developers find 
 
 With DevJobs, job seekers can save time, stay focused on roles that align with their expertise, and connect with potential employers who value their skills.
 
-Visit the [live demo](https://devjobs-bay-eta.vercel.app/) to experience DevJobs in action.
+Visit the [live demo](https://devjobs-bice.vercel.app/) to experience DevJobs in action.
 
 ### Table of Contents
 
